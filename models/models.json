@@ -1,0 +1,73 @@
+[
+    {},
+    {
+        "path": "models/model_1.pth",
+        "lr": 1e-05,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "weight_decay": 0.001,
+        "epochs": 15,
+        "batch_size": 512,
+        "loss_fn": "MSELoss()",
+        "train_loss": 0.14036073639993893,
+        "val_loss": 0.07346550097312311,
+        "test_loss": 0.646628674815578,
+        "desc": "DNN(\n  (input): Linear(in_features=158, out_features=79, bias=True)\n  (output): Linear(in_features=79, out_features=158, bias=True)\n  (dropout): Dropout(p=0.6, inplace=False)\n  (hiddens): ModuleList()\n)",
+        "acc": 0.646628674815578,
+        "thresh": 3.023,
+        "percision": [
+            0.9996070863713681,
+            0.41409595304421326
+        ],
+        "recall": [
+            0.5022545054707056,
+            0.9994391249402443
+        ],
+        "fscore": [
+            0.6685798019705368,
+            0.5855725880420714
+        ],
+        "tpr": 0.12917466111345094,
+        "charts": [
+            "charts/model_1-loss.jpg",
+            "charts/model_1-conf.jpg",
+            "charts/model_1-threshold.jpg"
+        ],
+        "notes": "first decent autoencoder"
+    },
+    {
+        "path": "models/model_2.pth",
+        "lr": 1e-05,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "weight_decay": 0.001,
+        "epochs": 20,
+        "batch_size": 512,
+        "loss_fn": "MSELoss()",
+        "train_loss": 0.1384156777648175,
+        "val_loss": 0.07197351057223224,
+        "test_loss": 0.6479770078276597,
+        "desc": "DNN(\n  (input): Linear(in_features=158, out_features=79, bias=True)\n  (output): Linear(in_features=79, out_features=158, bias=True)\n  (dropout): Dropout(p=0.6, inplace=False)\n  (hiddens): ModuleList()\n)",
+        "acc": 0.6479770078276597,
+        "thresh": 3.05,
+        "percision": [
+            0.9996067741041667,
+            0.41390155361196157
+        ],
+        "recall": [
+            0.5018555000687223,
+            0.9994391249402443
+        ],
+        "fscore": [
+            0.6682261234521892,
+            0.5853781934262304
+        ],
+        "tpr": 0.12515905327922736,
+        "charts": [
+            "charts/model_2-loss.jpg",
+            "charts/model_2-conf.jpg",
+            "charts/model_2-threshold.jpg"
+        ],
+        "notes": "looks almost exactly like model 1"
+    }
+]

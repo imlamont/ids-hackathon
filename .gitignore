@@ -1,4 +1,6 @@
 /.venv
 /normalized*
-/models
+/models/*.pth
 /charts
+*.tar
+*.tar.gz
