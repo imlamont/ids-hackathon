@@ -1,5 +1,8 @@
 [
-    {},
+    {
+        "path": "models/model_1.pth",
+        "notes": "bad"
+    },
     {
         "path": "models/model_1.pth",
         "lr": 1e-05,
@@ -69,5 +72,42 @@
             "charts/model_2-threshold.jpg"
         ],
         "notes": "looks almost exactly like model 1"
+    },
+    {
+        "path": "models/model_3.pth",
+        "lr": 1e-05,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "weight_decay": 0.001,
+        "epochs": 20,
+        "loss_fn": "MSELoss()",
+        "train_loss": 0.13847900510778796,
+        "val_loss": 0.07164903198473295,
+        "test_loss": 0.6533518653428226,
+        "desc": "DNN(\n  (input): Linear(in_features=158, out_features=79, bias=True)\n  (output): Linear(in_features=79, out_features=158, bias=True)\n  (dropout): Dropout(p=0.6, inplace=False)\n  (hiddens): ModuleList()\n)",
+        "acc": 0.6533518653428226,
+        "thresh": 3.048,
+        "percision": [
+            0.6095482105730546,
+            0.05154859232011196
+        ],
+        "recall": [
+            0.5077297925421809,
+            0.07601158668477875
+        ],
+        "fscore": [
+            0.5539996055337973,
+            0.06143438060663558
+        ],
+        "tpr": 0.12401810366151234,
+        "fpr": 0.26178176575984335,
+        "tnr": 0.7382182342401566,
+        "fnr": 0.8759818963384877,
+        "charts": [
+            "charts/model_3-loss.jpg",
+            "charts/model_3-conf.jpg",
+            "charts/model_3-threshold.jpg"
+        ],
+        "notes": "another basic autoencoder"
     }
 ]
