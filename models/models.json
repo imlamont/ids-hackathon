@@ -109,5 +109,42 @@
             "charts/model_3-threshold.jpg"
         ],
         "notes": "another basic autoencoder"
+    },
+    {
+        "path": "models/model_4.pth",
+        "lr": 1e-05,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "weight_decay": 0.001,
+        "epochs": 20,
+        "loss_fn": "MSELoss()",
+        "train_loss": 0.16827212759678334,
+        "val_loss": 0.0,
+        "test_loss": 0.6666452156809374,
+        "desc": "DNN(\n  (input): Linear(in_features=136, out_features=68, bias=True)\n  (output): Linear(in_features=68, out_features=136, bias=True)\n  (dropout): Dropout(p=0.6, inplace=False)\n  (hiddens): ModuleList()\n)",
+        "acc": 0.6666452156809374,
+        "thresh": 2.46,
+        "percision": [
+            0.9838770579201189,
+            0.37261580136414657
+        ],
+        "recall": [
+            0.4189090242693578,
+            0.980497167225964
+        ],
+        "fscore": [
+            0.5876234210864562,
+            0.5400121736795663
+        ],
+        "tpr": 0.45810687043313747,
+        "fpr": 0.29992050633001843,
+        "tnr": 0.7000794936699816,
+        "fnr": 0.5418931295668625,
+        "charts": [
+            "charts/model_4-loss.jpg",
+            "charts/model_4-conf.jpg",
+            "charts/model_4-threshold.jpg"
+        ],
+        "notes": "first model with float16, very premature"
     }
 ]
